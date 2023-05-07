@@ -1,0 +1,350 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d1117;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #161b22;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.fa {
+  color: #fff;
+}
+
+#small {
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.search-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+.anchor-list {
+  margin-left: 1.5rem;
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.anchor-list a {
+  color: #f0f6fc;
+  text-decoration: none;
+}
+
+#search-field {
+  background-color: #0d1117;
+  border: 1px solid grey;
+  border-radius: 0.2rem;
+  padding: 0.3rem;
+  width: 15rem;
+}
+
+.header-search-key-slash {
+  margin-left: -1.5rem;
+}
+
+.right {
+  display: flex;
+  width: 8%;
+  justify-content: space-between;
+  margin-left: 30rem;
+}
+
+.right div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.right span {
+  color: #f0f6fc;
+}
+
+.orp {
+  height: 5rem;
+  display: flex;
+  border-bottom: 0.5px solid #7d8590;
+  align-items: flex-end;
+}
+
+.orp nav {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.orp nav a {
+  color: #f0f6fc;
+  text-decoration: none;
+}
+
+.orp nav .octicon {
+  fill: #7d8590;
+  margin-right: 0.5rem;
+}
+
+.overview {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.7rem;
+}
+main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 7rem;
+}
+/* aside,
+article {
+  border: 1px solid red;
+} */
+
+aside {
+  width: 30%;
+  padding: 0 3.5rem 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+article {
+  width: 70%;
+}
+
+.user-avatar {
+  display: flex;
+  align-items: flex-end;
+}
+
+#avatar {
+  border-radius: 50%;
+  width: 100%;
+  margin-top: -2rem;
+}
+.fa-smile-o {
+  color: #7d8590;
+}
+
+.smiley {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 1rem;
+  border: 0.5px solid #7d8590;
+  background-color: #0d1117;
+  margin-left: -3rem;
+  margin-bottom: 1rem;
+}
+.name {
+  color: #e6edf3;
+  font-size: 24px;
+}
+
+.nickname {
+  color: #7d8590;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.bio {
+  color: #e6edf3;
+  font-size: 16px;
+  margin-bottom: 1rem;
+  width: 90%;
+}
+
+.edit-btn {
+  color: #c9d1d9;
+  background-color: #21262d;
+  border: 0.5px solid rgba(240, 246, 252, 0.1);
+  padding: 0.3rem 0;
+  border-radius: 0.3rem;
+}
+
+.f-f {
+  color: #7d8590;
+  display: flex;
+  align-items: center;
+}
+
+.octicon {
+  fill: #7d8590;
+}
+.followers,
+.following,
+.time {
+  color: #e6edf3;
+}
+
+.time-zone {
+  color: #7d8590;
+}
+
+.time-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 10.5rem;
+}
+
+.trophy {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+.achievements {
+  border-top: 0.3px solid #21262d;
+  width: 100%;
+  color: #e6edf3;
+  display: flex;
+  flex-direction: column;
+}
+
+.times-two {
+  font-size: 0.7rem;
+  background-color: #f9bfa7;
+  border-color: #f9bfa7;
+  color: #0d1117;
+  padding: 0.2rem 0.7rem;
+  border-radius: 1rem;
+  height: 1.5rem;
+  width: 2.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -1.5rem;
+}
+
+.send-fb {
+  display: flex;
+  align-items: center;
+}
+.send-fb span {
+  color: #2f81f7;
+  margin-left: 0.5rem;
+}
+.send-fb button {
+  color: #3fb950;
+  border: 0.2px solid #238636;
+  font-size: 11.9px;
+  padding: 1.4px 8px;
+  background-color: #0d1117;
+  border-radius: 0.7rem;
+}
+
+.highlights {
+  margin-top: 1rem;
+  padding: 1rem 0;
+  border-top: 0.3px solid #21262d;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.highlights span {
+  color: #e6edf3;
+}
+
+.highlights i {
+  color: #7d8590;
+}
+.highlights button {
+  color: #a371f7;
+  padding: 0 7px;
+  border: 0.3px solid #8957e5;
+  background-color: #0d1117;
+  margin-left: 0.5rem;
+  border-radius: 0.7rem;
+}
+
+.highlights p {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.organizations span {
+  color: #e6edf3;
+}
+
+.icons {
+  margin-top: 1rem;
+}
+article {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.repo-pair {
+  width: 100%;
+  height: 8rem;
+  border: 1px solid red;
+}
+
+.repo-count {
+  color: #e6edf3;
+  background-color: rgba(110, 118, 129, 0.4);
+  font-size: 12px;
+  margin-left: 8px;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.repo {
+  display: flex;
+  flex-direction: column;
+  border-top: .2px solid #21262d;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.repo span {
+  margin-bottom: .5rem;
+}
+
+.repo-name,
+.repo-primary-language {
+  color: #2f81f7;
+}
+
+.repo-name{
+  margin-bottom: .5rem;
+
+  text-decoration: none;
+  font-size: 20px;
+}
+.repo-name:hover{
+  text-decoration: underline;
+}
+
+.repo-desc {
+  color: #7d8590;
+}
+
+.repo-updated-at {
+  color: #7d8590;
+}
