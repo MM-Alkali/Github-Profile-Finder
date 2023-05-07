@@ -1,7 +1,4 @@
-const githubData = {
-  token: "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",
-  username: "Aksheg",
-};
+import {GITHUB_PAT} from './config.js';
 
 const body = {
   query: `
@@ -61,8 +58,9 @@ const baseUrl = "https://api.github.com/graphql";
 
 const headers = {
   "Content-Type": "application/json",
-  Authorization: "Bearer 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",
+  Authorization: GITHUB_PAT,
 };
+
 const avatar = document.getElementById("small");
 const profileImage = document.getElementById("avatar");
 const fullName = document.querySelector(".name");
@@ -103,7 +101,7 @@ fetch(baseUrl, {
     repoArr.map((repo) => {
       const repoDiv = document.createElement("div");
       const repoName = document.createElement("a");
-      repoName.href =repo.url
+      repoName.href = repo.url;
       const repoDesc = document.createElement("span");
       const repoPriLang = document.createElement("span");
       const repoUpdatedAt = document.createElement("span");
